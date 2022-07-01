@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+.main_div {
+  display: flex;
+  margin: 5%;
+}
+
+.main_img_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_img {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+.img_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.thumbnails {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 4%;
+}
+
+.thumbnail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  border-radius: 10px;
+}
+.thumbnail:hover {
+  border: 2px solid hsl(26, 100%, 55%);
+}
+
+.thumbnail_clicked {
+  border: 2px solid hsl(26, 100%, 55%);
+}
+.thumbnail_img {
+  border-radius: 8px;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.thumbnail_img:hover {
+  cursor: pointer;
+
+  opacity: 0.5;
+}
+
+.thumbnail_img_clicked {
+  opacity: 0.5;
+}
+.company {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 70%;
+  color: hsl(26, 100%, 55%);
+}
+
+.heading {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 220%;
+  padding-right: 20%;
+  margin-top: 0%;
+}
+
+.description {
+  color: hsl(219, 9%, 45%);
+  padding-right: 30%;
+  font-weight: 400;
+}
+
+.price_discount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -3%;
+  width: 20%;
+}
+
+.price {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 120%;
+}
+
+.discount {
+  background-color: hsl(25, 100%, 94%);
+  font-family: "Kumbh Sans", sans-serif;
+  color: hsl(26, 100%, 55%);
+  border-radius: 3px;
+  padding: 2px 5px;
+  height: 40%;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.former_price {
+  color: hsl(220, 14%, 75%);
+  font-weight: 500;
+  font-size: 70%;
+  margin-top: -3%;
+  text-decoration: line-through;
+}
+
+.quantity {
+  display: flex;
+  justify-content: space-between;
+  width: 15%;
+  padding: 18px;
+  border-radius: 5px;
+  height: 1px;
+  background-color: hsl(223, 64%, 98%);
+  align-items: center;
+  margin-right: 20px;
+}
+.quantity_div {
+  display: flex;
+  margin-top: 5%;
+}
+.minus_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.unit {
+  font-weight: bold;
+}
+
+.add_to_cart_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  color: white;
+  background-color: hsl(26, 100%, 55%);
+  border-radius: 5px;
+  width: 45%;
+  height: 36px;
+  box-shadow: 0px 20px 30px hsl(25, 97%, 86%);
+}
+
+.btn_title {
+  margin-left: 15px;
+  font-family: "Kumbh Sans", sans-serif;
+}

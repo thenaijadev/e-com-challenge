@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@900&display=swap");
+.button_nav {
+  opacity: 0;
+  color: rgb(0, 0, 0);
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin-left: -40px;
+}
+
+.link {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.close_icon {
+  padding-bottom: 15%;
+}

@@ -2,14 +2,24 @@ import "./App.css";
 import Nav from "./Components/Nav/Nav";
 import MobileNav from "./Components/Nav/MobileNav";
 import useWindowDimensions from "./Helpers/WindowDimentions";
-import { useState } from "react";
+import MainBody from "./Components/Body/Body";
+import { Fragment } from "react";
 function App() {
   const { height, width } = useWindowDimensions();
 
   if (width <= 800) {
-    return <MobileNav />;
+    return (
+      <Fragment>
+        <MobileNav />
+      </Fragment>
+    );
   } else {
-    return <Nav></Nav>;
+    return (
+      <Fragment>
+        <Nav />
+        <MainBody />
+      </Fragment>
+    );
   }
 }
 

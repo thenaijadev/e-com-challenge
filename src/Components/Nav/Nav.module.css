@@ -20,6 +20,15 @@
 .link {
   margin-left: 3vw;
   color: hsl(219, 9%, 45%);
+  transition: text-underline-offset 300ms;
+}
+
+.link:hover {
+  text-decoration: underline 3px;
+  text-decoration-color: hsl(26, 100%, 55%);
+  text-underline-offset: 2.3rem;
+  cursor: pointer;
+  color: hsl(220, 13%, 13%);
 }
 
 .cart_avatar {
@@ -33,6 +42,12 @@
 
 .avatar {
   width: 20%;
+
+  border-radius: 50%;
+}
+
+.avatar:hover {
+  border: solid 2px hsl(26, 100%, 55%);
 }
 
 hr {
@@ -56,14 +71,14 @@ hr {
   margin-left: 5vw;
 }
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 475px) {
   .avatar {
     width: 30%;
   }
   .cart_avatar {
     display: flex;
     align-items: center;
-    margin-left: 18%;
+    margin-left: 0%;
     justify-content: space-around;
     margin-right: 10px;
   }
@@ -71,5 +86,8 @@ hr {
     font-family: "Kumbh Sans", sans-serif;
     font-size: 200%;
     list-style: none;
+    margin-left: -65%;
+    margin-top: -5px;
+    z-index: -1;
   }
 }
