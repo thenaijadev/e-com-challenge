@@ -1,0 +1,27 @@
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 2;
+  top: 0;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 25%;
+  position: absolute;
+}
+
+.image_gallery {
+  height: 40px;
+}
+
+.close {
+  position: absolute;
+  top: 40px;
+  left: 63.5%;
+  transition: 0.3s;
+}
+
+.close:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
