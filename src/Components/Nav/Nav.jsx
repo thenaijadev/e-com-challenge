@@ -4,7 +4,8 @@ import CartAvatar from "./CartAvatar";
 const Nav = () => {
   return (
     <Fragment>
-      <div className={classes.nav_bar}>
+    
+     <div className={classes.nav_bar}>
         <ul className={classes.links}>
           <li className={classes.logo}>sneakers</li>
           <li className={classes.link}>Collections</li>
@@ -16,6 +17,7 @@ const Nav = () => {
         <CartAvatar />
       </div>
       <hr></hr>
+  
     </Fragment>
   );
 };

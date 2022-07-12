@@ -25,3 +25,34 @@
   cursor: pointer;
   transform: scale(1.5);
 }
+
+.next {
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  position: absolute;
+  width: 33px;
+  height: 29px;
+  right: 33.6%;
+  top: 40%;
+  padding: 10px;
+  padding: 11px;
+}
+
+.previous {
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  width: 33px;
+  height: 30px;
+  position: absolute;
+  left: 33.6%;
+  padding: 11px;
+  top: 40%;
+}
+
+.next:hover {
+  cursor: pointer;
+}
+
+.previous {
+  cursor: pointer;
+}

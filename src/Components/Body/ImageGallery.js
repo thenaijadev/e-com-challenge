@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import classes from "./Body.module.css";
 import Product_1 from "../../images/image-product-1.jpg";
 import Product_2 from "../../images/image-product-2.jpg";
@@ -8,6 +8,8 @@ import Product_1_thumbnail from "../../images/image-product-1-thumbnail.jpg";
 import Product_2_thumbnail from "../../images/image-product-2-thumbnail.jpg";
 import Product_3_thumbnail from "../../images/image-product-3-thumbnail.jpg";
 import Product_4_thumbnail from "../../images/image-product-4-thumbnail.jpg";
+import Previous from "../../images/icon-previous.svg";
+import Next from "../../images/icon-next.svg";
 const ImageGallery = (props) => {
   const [productImage, setProductImage] = useState(Product_1);
 
@@ -15,6 +17,7 @@ const ImageGallery = (props) => {
   const [isClicked2, setIsClicked2] = useState(false);
   const [isClicked3, setIsClicked3] = useState(false);
   const [isClicked4, setIsClicked4] = useState(false);
+
   const product1ClickHandler = () => {
     setIsClicked1(true);
     setIsClicked2(false);
@@ -43,6 +46,7 @@ const ImageGallery = (props) => {
     setIsClicked4(true);
     setProductImage(Product_4);
   };
+
   return (
     <div className={classes.img_div}>
       <div className={classes.main_img_div}>
@@ -53,6 +57,16 @@ const ImageGallery = (props) => {
           src={productImage}
         />
       </div>
+      {/* {props.isOnModal ? (
+        <img
+          className={classes.previous}
+          src={Previous}
+          onClick={previousHandler}
+        ></img>
+      ) : null}
+      {props.isOnModal ? (
+        <img className={classes.next} src={Next} onClick={nextHandler}></img>
+      ) : null} */}
       <div className={classes.thumbnails}>
         <div
           className={`${classes.thumbnail} ${

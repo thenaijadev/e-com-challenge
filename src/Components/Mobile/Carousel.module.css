@@ -1,0 +1,40 @@
+.img_div {
+  height: 40vh;
+  width: 100vw;
+
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.next {
+  position: absolute;
+  z-index: 1;
+  top: 28%;
+  right: 10px;
+  background-color: white;
+  width: 45px;
+  height: 45px;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.previous {
+  position: absolute;
+  z-index: 1;
+  padding: 15px;
+  border-radius: 50%;
+  background-color: white;
+  width: 45px;
+  height: 45px;
+  top: 28%;
+  left: 10px;
+}
+
+.next:hover {
+  transform: scale(1.2);
+  color: whitesmoke;
+}
+.previous:hover {
+  transform: scale(1.2);
+  color: whitesmoke;
+}
